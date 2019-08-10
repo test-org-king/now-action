@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "now-build": "vuepress build ../docs --dest ./dist && now && now alias",
+    "build": "vuepress build ../docs --dest ./dist && now && now alias",
     "deploy": "vuepress build ../docs --dest ./dist && now && now alias"
   },
   "devDependencies": {
