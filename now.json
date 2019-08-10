@@ -1,0 +1,8 @@
+{
+  "name": "umijs.org",
+  "version": 2,
+  "builds": [
+    { "src": "umijs/package.json", "use": "@now/static-build", "config": {"distDir": "dist" }}
+  ],
+  "alias": ["umijs.now.sh"]
+}
