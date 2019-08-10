@@ -22,7 +22,7 @@ action "alias" {
 action "master-branch-filter" {
   needs = "alias"
   uses = "actions/bin/filter@master"
-  args = "branch now-action-workflow"
+  args = "branch master"
 }
 
 # Requires now.json in repository
@@ -30,5 +30,5 @@ action "release" {
   needs = "master-branch-filter"
   uses = "actions/zeit-now@master"
   secrets = ["ZEIT_TOKEN"]
-  args = "alias --local-config=./now.json"
+  args = "alias --local-config=./site/now.json"
 }
