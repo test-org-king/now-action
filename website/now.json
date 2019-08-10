@@ -1,5 +1,8 @@
 {
   "name": "umijs.org",
   "version": 2,
-  "builds": [{ "src": "website/package.json", "use": "@now/static-build" }]
+  "builds": [{
+    "src": "package.json",
+    "use": "@now/static-build"
+  }]
 }
